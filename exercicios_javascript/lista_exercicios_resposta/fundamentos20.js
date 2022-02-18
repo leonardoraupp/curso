@@ -47,6 +47,7 @@ function calcularValorNota(valorSaque) {
     } else if (valorSaque >= 1) {
         return 1
     }
+    
 }
 
 function elaborarResultado(contador100, contador50, contador10, contador5, contador1) {
@@ -75,5 +76,6 @@ function elaborarResultado(contador100, contador50, contador10, contador5, conta
     return resultado
 }
 
-console.log(sacarDinheiro(153));
-console.log(sacarDinheiro(15));
+console.log(sacarDinheiro(250));
+console.log(sacarDinheiro(20));
+

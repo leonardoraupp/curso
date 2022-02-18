@@ -1,0 +1,52 @@
+<h1>Projeto</h1>
+
+<ul onload="ocultar();" class="tree">
+  <li>
+    <span wb-folder>backend</span>
+    <ul>
+      <li>
+        <span wb-folder>app</span>
+        <ul>
+          <li>produto.js</li>
+          <li>usuario.js</li>
+          <li>venda.js</li>
+        </ul>
+      </li>
+      <li>
+        <span wb-folder>config</span>
+        <ul>
+          <li>banco.js</li>
+          <li>rotas.js</li>
+          <li>servidor.js</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <span wb-folder>frontend</span>
+    <ul>
+      <li>
+        <span wb-folder> public</span>
+        <ul>
+          <li>app.css</li>
+          <li>app.js</li>
+          <li>index.html</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<script>
+  document.querySelectorAll("[wb-folder]").forEach((folder) => {
+    folder.onclick = (e) => {
+      const ul = folder.nextElementSibling;
+      console.log(ul);      //mostra a ul no console do browser
+      d = ul.style.display;
+
+      ul.style.display = d === "none" ? "block" : "none";
+    };
+  });
+</script>
+
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css" />
