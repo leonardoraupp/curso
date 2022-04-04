@@ -6,7 +6,25 @@
     <title>CSS Selectors</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        /* seletores
+        .class
+        #id
+        tag > tag_adjacente
+        tag ~ tag_filha_independente_da_proximidade
+        propriedade = valor
+        propriedade *= parte_do_valor
+        propriedade ~= valor_independente_da_proximidade
+        tag:nth-child(1) >>>>(pega uma tag que seja a primeira filha de algum elemento)
+        tag > nth-child(odd) >>>>(pega tags filha(s) impar(es) de algum elemento)
+        tag > nth-child(even) >>>>(pega tags filha(s) par(es) de algum elemento)
+        tag > :nth-child(odd), outra_tag, outra_tag
+        tag > :nth-child(odd) outra_tag_filha, outra_tag_filha
+        section > span:nth-of-type(2) >>> pega a segunda tag filha de algum tipo
+        */
+        section > span:nth-of-type(2) {
+            color: #ff0;
+            background-color: #f77;
+        }
     </style>
 </head>
 
@@ -29,7 +47,7 @@
             </ol>
             <div id='aninhado' class='tag'>
                 <div class="tag">
-                    <section class='tag'>
+                    <section class='tag nolabel'>
                         <span class='tag'>1</span>
                         <p class='tag'>2</p>
                         <span class='tag'>3</span>
