@@ -1,2 +1,2 @@
-# web-moderno-course
+# Curso Web Moderno
 A course from Coder school
